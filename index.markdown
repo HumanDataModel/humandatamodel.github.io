@@ -4,4 +4,8 @@
 
 layout: home
 ---
-The page id currently under construction. Instructions will become available real soon!
+The page is currently under construction. Instructions will become available real soon!
+
+<img src="{{site.baseurl}}/assets/img/SeedFile.png">
+<img src="{{site.baseurl}}/assets/img/seedGenerator.png">
+<img src="{{site.baseurl}}/assets/img/usage.png">
