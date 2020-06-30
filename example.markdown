@@ -4,7 +4,9 @@ title: Examples
 permalink: /examples/
 ---
 
-
+<center>
+<img src="{{site.baseurl}}/assets/img/running.png" width="100%">
+</center>
 
 {% highlight js %}
 var bob = {
