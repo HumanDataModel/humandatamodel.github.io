@@ -28,7 +28,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nikkis
 github_username:  HumanDataModel
 
-
+# Specify the name of a file to show as a masthead graphic at the top of each page, instead of a title, here:
+masthead: /assets/img/hdm.png
 
   # Build settings
 theme: minima
