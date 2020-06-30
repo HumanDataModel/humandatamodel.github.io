@@ -36,9 +36,63 @@
       <div class="wrapper">
         <div class="home"><p>The page is currently under construction. Instructions will become available real soon!</p>
 
-<p><img src="/assets/img/SeedFile.png" />
-<img src="/assets/img/seedGenerator.png" />
-<img src="/assets/img/usage.png" /></p>
+<center>
+<img src="/assets/img/PCS.png" width="50%" />
+</center>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">bob</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">username</span><span class="p">:</span> <span class="dl">"</span><span class="s2">bob</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">identity</span><span class="p">:</span> <span class="dl">"</span><span class="s2">bob@hdm</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">companionUUID</span><span class="p">:</span> <span class="dl">"</span><span class="s2">FB694B90-F49E-4597-8306-171BBA78F844</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">facebookID</span><span class="p">:</span> <span class="dl">"</span><span class="s2">102684690214746</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">devices</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">5BF2E050-4730-46DE-B6A7-2C8BE4D9FA36</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">bob@iphoneSE</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">8B034F7B-FA9B-540F-ACF3-88C0CA70C84F</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">bob@ibeacon</span><span class="dl">"</span>
+    <span class="p">}</span>
+<span class="p">};</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">hdModel</span><span class="p">.</span><span class="nx">addSensationGenerator</span><span class="p">(</span>
+    <span class="dl">'</span><span class="s1">social_proximity_set</span><span class="dl">'</span><span class="p">,</span> <span class="p">[</span><span class="dl">'</span><span class="s1">proxemic_devices</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">facebook_friends</span><span class="dl">'</span><span class="p">],</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span>
+    <span class="kd">function</span> <span class="p">(</span><span class="nx">theModel</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="kd">var</span> <span class="nx">sensation</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="na">type</span><span class="p">:</span> <span class="dl">'</span><span class="s1">social_proximity_set</span><span class="dl">'</span><span class="p">,</span>
+            <span class="na">value</span><span class="p">:</span> <span class="p">{</span>
+                <span class="na">friends</span><span class="p">:</span> <span class="p">{}</span>
+            <span class="p">}</span>
+        <span class="p">};</span>
+
+        <span class="kd">var</span> <span class="nx">user</span><span class="p">;</span>
+        <span class="k">for</span> <span class="p">(</span><span class="nx">user</span> <span class="k">in</span> <span class="nx">theModel</span><span class="p">.</span><span class="nx">proxemicUsers</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">theModel</span><span class="p">.</span><span class="nx">proxemicUsers</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="nx">user</span><span class="p">))</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">theModel</span><span class="p">.</span><span class="nx">facebookFriends</span><span class="p">).</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">user</span><span class="p">)</span> <span class="o">!==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="nx">sensation</span><span class="p">.</span><span class="nx">value</span><span class="p">.</span><span class="nx">friends</span><span class="p">[</span><span class="nx">user</span><span class="p">]</span> <span class="o">=</span> <span class="nx">theModel</span><span class="p">.</span><span class="nx">facebookFriends</span><span class="p">[</span><span class="nx">user</span><span class="p">];</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nx">sensation</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">);</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">currentSocialGraphMD5</span> <span class="o">=</span> <span class="dl">''</span><span class="p">;</span>
+<span class="nx">hdModel</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">social_proximity_set</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">currentSocialGraphMD5</span> <span class="o">!==</span> <span class="nx">event</span><span class="p">.</span><span class="nx">md5</span> <span class="o">&amp;&amp;</span> <span class="nx">hdModel</span><span class="p">.</span><span class="nx">proxemicDevices</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">currentSocialGraphMD5</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="nx">md5</span><span class="p">;</span>
+
+        <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">.thegraph</span><span class="dl">'</span><span class="p">).</span><span class="nx">fadeIn</span><span class="p">();</span>
+
+        <span class="nx">updateProximityGraph</span><span class="p">(</span>
+            <span class="nx">event</span><span class="p">.</span><span class="nx">sender</span><span class="p">,</span>
+            <span class="nx">hdModel</span><span class="p">.</span><span class="nx">proxemicDevices</span>
+        <span class="p">);</span>
+
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+
+        <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">.thegraph</span><span class="dl">'</span><span class="p">).</span><span class="nx">fadeOut</span><span class="p">(</span><span class="mi">5000</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span></code></pre></figure>
+
 <h2 class="post-list-heading">Posts</h2>
     <ul class="post-list"><li><span class="post-meta">Jun 24, 2020</span>
         <h3>
