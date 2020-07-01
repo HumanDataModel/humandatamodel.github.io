@@ -18,6 +18,8 @@ figure > img { display: block; }
 
 figcaption { font-size: 14px; }
 
+img.fig { padding-top: 20px; padding-bottom: 20px; }
+
 /** Lists */
 ul, ol { margin-left: 30px; }
 
