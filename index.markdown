@@ -24,3 +24,10 @@ Today, the number of interconnected devices and the amount of personal informati
 <center>
 <img class="fig" src="{{site.baseurl}}/assets/img/Interaction-Edge-Fog-Cloud.png" width="100%">
 </center>
+
+
+<h1>Architecture of Human Data Model</h1>
+
+<center>
+<img class="fig" src="{{site.baseurl}}/assets/img/architecture.png" width="100%">
+</center>
