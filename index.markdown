@@ -32,6 +32,12 @@ HDMIM also fetches Seed Files from the Human Data Model hub. The seed files cont
 
 <h1>Running Human Data Model in the Fog</h1>
 
+The contemporary computing environment no longer consists of a single computing device per user, but instead a set of devices around the user as well as a set of remote services. These entities provide various computing capabilities as well as other resources, like storage or heavy computing power required by neural networks, etc. Hence, in the computation perspective, it becomes essential that the computations can be performed where the data is located. Despite the emerging 5G and other networking technology, it has been estimated that the network is actually becoming a bottleneck in many mission-critical applications. 
+
+The performance, however, is not the only issue. Similarly, the data about the user has been scattered among an ever-growing set of devices and services. Form a privacy perspective, it becomes essential that the computations related to certain data can be performed on the node where the data is actually situated. This prevents the need to transfer all the data to remote services and away from the user's possession. 
+
+Human Data Model is a highly centralized programming model that helps to perform the computations on the nodes where the data is located. This happens by executing an instance of the Human Data Model on the node that contains data related to the user. Then the data is being pre-processed there, and the end-result – Sensasations – are being synchronized to other user's HDM instances and combined there to other sensations. Eventually, this leads to highly abstract and useful sensations that can be used in the interactions between the user and the data. Typical use cases are proactively triggered computer-human interactions, like making the user suggestions and automatically performing tasks for the user.
+
 <center>
 <img class="fig" src="{{site.baseurl}}/assets/img/Interaction-Edge-Fog-Cloud.png" width="100%">
 </center>
