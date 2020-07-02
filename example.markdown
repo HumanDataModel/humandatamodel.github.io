@@ -8,7 +8,7 @@ permalink: /examples/
 
 Imagine the following scenario: Bob is meeting his friends at university, and their phones proactively suggest they jog together since, based on their personal profiles, they are all stressed about their courses. It seems that they have lately been quite inactive in any physical activity.
 
-The figure below presents the outcome of this example build with the Human Data Model. In the figure, the users' HDM instances run on different devices, collecting and processing data.
+The figure below presents the outcome of this example build with the Human Data Model. In the figure, the users' HDM instances run on different devices (one on a NodeJS server, another in Chrome Web Browser), collecting and processing data.
 
 <center>
 <img src="{{site.baseurl}}/assets/img/running.png" width="100%">
