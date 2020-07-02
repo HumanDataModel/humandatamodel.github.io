@@ -22,13 +22,13 @@ Today, the number of interconnected devices and the amount of personal informati
 
 <h1>Architecture of Human Data Model</h1>
 
-The layered architecture and components of the Human Data Model framework have been introduced on the left-hand side in the figure below. The programming interface layer (see more on API page and Examples) executes the Human Data Model programming components. Human Data Model Instance Manager (HDMIM) layer, on the other hand, is responsible for executing the programming constructs (Analysis Model component) as well as connecting to other Human Data Model instances (Connectivity Manager component) and synchronizing data between them (Sensation Synchronization component) via Connectivity Layer. 
+The layered architecture and components of the Human Data Model framework have been introduced on the left-hand side in the figure below. The `Programming Interface` layer (see more on API page and Examples) executes the Human Data Model programming components. `Human Data Model Instance Manager` (HDMIM) layer, on the other hand, is responsible for executing the programming constructs (`Analysis Model` component) as well as connecting to other Human Data Model instances (`Connectivity Manager` component) and synchronizing data between them (`Sensation Synchronization` component) via `Connectivity Layer`. 
 
 <center>
 <img class="fig" src="{{site.baseurl}}/assets/img/architecture.png" width="100%">
 </center>
 
-HDMIM also fetches Seed Files from the Human Data Model hub. The seed files contain identifiers related to the person and his/her devices and services. (Read more about Seed Files from API and Example pages.) With the programming constructs, the framework merges the Virtual, Physical, and Social worlds into each other by processing the data these different worlds provide. The result – Sensations – can then be leveraged in all three worlds by various applications.
+HDMIM also fetches Seed Files from the Human Data Model hub. The Seed Files contain identifiers related to the person and his/her devices and services. (Read more about Seed Files from API and Example pages.) With the programming constructs, the framework merges the Virtual, Physical, and Social worlds into each other by processing the data these different worlds provide. The result – Sensations – can then be leveraged in all three worlds by various applications.
 
 
 
