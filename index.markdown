@@ -28,7 +28,7 @@ The layered architecture and components of the Human Data Model framework have b
 <img class="fig" src="{{site.baseurl}}/assets/img/architecture.png" width="100%">
 </center>
 
-HDMIM also fetches Seed Files from the Human Data Model hub. The Seed Files contain identifiers related to the person and his/her devices and services. (Read more about Seed Files from API and Example pages.) With the programming constructs, the framework merges the Virtual, Physical, and Social worlds into each other by processing the data these different worlds provide. The result – Sensations – can then be leveraged in all three worlds by various applications.
+HDMIM also fetches `Seed Files` from the Human Data Model hub. The Seed Files contain identifiers related to the person and his/her devices and services. (Read more about Seed Files from API and Example pages.) With the programming constructs, the framework merges the Virtual, Physical, and Social worlds into each other by processing the data these different worlds provide. The result – `Sensations` – can then be leveraged in all three worlds by various applications.
 
 
 
