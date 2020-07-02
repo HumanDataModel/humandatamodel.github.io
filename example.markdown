@@ -64,7 +64,7 @@ hdModel.addSensationGenerator(
 );
 {% endhighlight %}
 
-
+The code below shows how the `social_proximity_set` sensation is leverged in a single page Web application (like in the figure on top of this page). In the code, it is first ensured that the sensation has not yet been consumed, and if not the graph (implemented in D3.js in the figure) is then updated. If the sensation was void, then the devices are removed from the graph (see the else-branch).
 
 
 {% highlight js %}
