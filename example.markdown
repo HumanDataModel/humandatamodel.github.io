@@ -33,7 +33,10 @@ var bob = {
 {% endhighlight %}
 
 
-The `SenstaionGenerator`
+The `SenstaionGenerator` below leverages the data injected to HDM instances. It the following preprocessed data (Sensations) into higher abstraction level Sensations: `proxemic_devices` and `facebook_friends`. The former is based on preprocessed Bluetooth Signal Strangeth Indicators (RSSI) where the device identifiers have been replaced with human-friendly names (e.g., bob@iphoneSE) and the strangth with values: Immediate, Nearby, Far, etc. This all preprocessing is done by the `Analysis Component` of the HDM framework by using the information provided in the users' `SeedFiles`.
+
+
+
 
 {% highlight js %}
 hdModel.addSensationGenerator(
