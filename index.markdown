@@ -4,7 +4,7 @@ layout: home
 
 <h1>What is Human Data Model?</h1>
 
-Human Data Model (HDM) is a novel programming model for implementing Internet of Bodeis solutions. The model aims to merge Cyber, Physical, and Social Worlds into each other, providing developers an intuitive way of implementing novel IoT applications. This site contains documentation and implementation details on the current implementation of Human Data Model: HDM framework.
+Human Data Model (HDM) is a novel programming model for implementing the Internet of Bodies solutions. The model aims to merge Cyber, Physical, and Social Worlds into each other, providing developers an intuitive way of leveraging the data collected by services and devices while implementing novel IoT applications. This site contains documentation and implementation details on the current implementation of the Human Data Model – HDM framework.
 
 <center>
 <img class="fig" src="{{site.baseurl}}/assets/img/PCS.png" width="50%">
