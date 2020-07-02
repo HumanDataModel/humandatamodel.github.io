@@ -37,6 +37,7 @@ The `SenstaionGenerator` below leverages the data injected to HDM instances. It 
 
 The second argument, `facebook_friends` is also fetched by the instance. In the `SenstaionGenerator` it is used to form `social_proximity_set` sensation to indicate which (Facebook) friends and devices are nearby.
 
+The third argument tells the HDM instance the interval in seconds for how frequently the generator can be called, and the fourth argument the `valid time value` indicates how long the generated sensation is stored in the model before it is being void.
 
 {% highlight js %}
 hdModel.addSensationGenerator(
@@ -62,6 +63,9 @@ hdModel.addSensationGenerator(
     }
 );
 {% endhighlight %}
+
+
+
 
 {% highlight js %}
 var currentSocialGraphMD5 = '';

@@ -70,6 +70,8 @@
 
 <p>The second argument, <code class="language-plaintext highlighter-rouge">facebook_friends</code> is also fetched by the instance. In the <code class="language-plaintext highlighter-rouge">SenstaionGenerator</code> it is used to form <code class="language-plaintext highlighter-rouge">social_proximity_set</code> sensation to indicate which (Facebook) friends and devices are nearby.</p>
 
+<p>The third argument tells the HDM instance the interval in seconds for how frequently the generator can be called, and the fourth argument the <code class="language-plaintext highlighter-rouge">valid time value</code> indicates how long the generated sensation is stored in the model before it is being void.</p>
+
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">hdModel</span><span class="p">.</span><span class="nx">addSensationGenerator</span><span class="p">(</span>
     <span class="dl">'</span><span class="s1">social_proximity_set</span><span class="dl">'</span><span class="p">,</span> <span class="p">[</span><span class="dl">'</span><span class="s1">proxemic_devices</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">facebook_friends</span><span class="dl">'</span><span class="p">],</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span>
     <span class="kd">function</span> <span class="p">(</span><span class="nx">theModel</span><span class="p">)</span> <span class="p">{</span>
