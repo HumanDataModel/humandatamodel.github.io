@@ -24,11 +24,13 @@ Today, the number of interconnected devices and the amount of personal informati
 
 The layered architecture and components of the Human Data Model framework have been introduced on the left-hand side in the figure below. The programming interface layer (see more on API page and Examples) executes the Human Data Model programming components. Human Data Model Instance Manager (HDMIM) layer, on the other hand, is responsible for executing the programming constructs (Analysis Model component) as well as connecting to other Human Data Model instances (Connectivity Manager component) and synchronizing data between them (Sensation Synchronization component) via Connectivity Layer. 
 
-HDMIM also fetches Seed Files from the Human Data Model hub. The seed files contain identifiers related to the person and his/her devices and services. (Read more about Seed Files from API and Example pages.) With the programming constructs, the framework merges the Virtual, Physical, and Social worlds into each other by processing the data these different worlds provide. The result – Sensations – can then be leveraged in all three worlds by various applications.
-
 <center>
 <img class="fig" src="{{site.baseurl}}/assets/img/architecture.png" width="100%">
 </center>
+
+HDMIM also fetches Seed Files from the Human Data Model hub. The seed files contain identifiers related to the person and his/her devices and services. (Read more about Seed Files from API and Example pages.) With the programming constructs, the framework merges the Virtual, Physical, and Social worlds into each other by processing the data these different worlds provide. The result – Sensations – can then be leveraged in all three worlds by various applications.
+
+
 
 <h1>Running Human Data Model in the Fog</h1>
 
@@ -36,9 +38,11 @@ The contemporary computing environment no longer consists of a single computing 
 
 The performance, however, is not the only issue. Similarly, the data about the user has been scattered among an ever-growing set of devices and services. Form a privacy perspective, it becomes essential that the computations related to certain data can be performed on the node where the data is actually situated. This prevents the need to transfer all the data to remote services and away from the user's possession. 
 
-Human Data Model is a highly centralized programming model that helps to perform the computations on the nodes where the data is located. This happens by executing an instance of the Human Data Model on the node that contains data related to the user. Then the data is being pre-processed there, and the end-result – Sensasations – are being synchronized to other user's HDM instances and combined there to other sensations. Eventually, this leads to highly abstract and useful sensations that can be used in the interactions between the user and the data. Typical use cases are proactively triggered computer-human interactions, like making the user suggestions and automatically performing tasks for the user.
-
 <center>
 <img class="fig" src="{{site.baseurl}}/assets/img/Interaction-Edge-Fog-Cloud.png" width="100%">
 </center>
+
+Human Data Model is a highly centralized programming model that helps to perform the computations on the nodes where the data is located. This happens by executing an instance of the Human Data Model on the node that contains data related to the user. Then the data is being pre-processed there, and the end-result – Sensasations – are being synchronized to other user's HDM instances and combined there to other sensations. Eventually, this leads to highly abstract and useful sensations that can be used in the interactions between the user and the data. Typical use cases are proactively triggered computer-human interactions, like making the user suggestions and automatically performing tasks for the user.
+
+
 

@@ -4,6 +4,7 @@ title: API
 permalink: /api/
 ---
 
+The following tables document the present version of the main programming intaerface and data types of Human Data Model framework. The tables are being updated when changes in the API occur. 
 
 | Programming interface |
 |-------|---------|
