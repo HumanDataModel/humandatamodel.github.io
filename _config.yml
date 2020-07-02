@@ -21,7 +21,7 @@
 title: Human Data Model
 email: admin@nkm.io
 description: >- # this means to ignore newlines until "baseurl:"
-Human Data Model (HDM) is a novel programming model for implementing the Internet of Bodies solutions. The model aims to merge Cyber, Physical, and Social Worlds into each other, providing developers an intuitive way of implementing novel IoT applications. This site contains documentation and implementation details on the current implementation of the Human Data Model – HDM framework.
+Human Data Model (HDM) is a novel programming model for implementing the Internet of Bodies solutions. The model aims to merge Cyber, Physical, and Social Worlds into each other, providing developers an intuitive way of implementing novel IoT applications. This site contains documentation and implementation details on the current implementation of the Human Data Model - HDM framework.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nikkis
