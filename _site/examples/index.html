@@ -95,7 +95,7 @@
     <span class="p">}</span>
 <span class="p">);</span></code></pre></figure>
 
-<p>The code below shows how the <code class="language-plaintext highlighter-rouge">social_proximity_set</code> sensation is leverged in a single page Web application (like in the figure on top of this page). In the code, it is first ensured that the sensation has not yet been consumed, and if not the graph (implemented in D3.js in the figure) is then updated. If the sensation was void, then the devices are removed from the graph (see the else-branch).</p>
+<p>The code below shows how the <code class="language-plaintext highlighter-rouge">social_proximity_set</code> sensation is leverged in a single page Web application (like in the figure on top of this page). In the code, it is first ensured that the sensation has not yet been consumed, and if not the graph (implemented in D3.js in the figure) is then updated. The <code class="language-plaintext highlighter-rouge">updateProximityGraph</code> has been omitted from this example, but can be found from the repository. If the sensation was void, then the devices are removed from the graph (see the else-branch).</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">currentSocialGraphMD5</span> <span class="o">=</span> <span class="dl">''</span><span class="p">;</span>
 <span class="nx">hdModel</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">social_proximity_set</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
