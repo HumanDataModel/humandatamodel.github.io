@@ -53,7 +53,7 @@
 
 <h1>How can such proactive suggestions be build with Human Data Model?</h1>
 
-<p>First, the users must have SeedFiles on their Human Data Model instances. Below is Bob’s SeedFile containing his identifiers on HDM, his phone’s (companion device) identifier, his Facebook identifier, and his other personal device identifiers. The SeedFile can either be copy-pasted on the instance or be automatically fetched from HDM Hub.</p>
+<p>First, the users must have <code class="language-plaintext highlighter-rouge">SeedFiles</code> on their Human Data Model instances. Below is Bob’s <code class="language-plaintext highlighter-rouge">SeedFile</code> containing his identifiers on HDM, his phone’s (companion device) identifier, his Facebook identifier, and his other personal device identifiers. The <code class="language-plaintext highlighter-rouge">SeedFile</code> can either be copy-pasted on the instance or be automatically fetched from HDM Hub.</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">bob</span> <span class="o">=</span> <span class="p">{</span>
     <span class="na">username</span><span class="p">:</span> <span class="dl">"</span><span class="s2">bob</span><span class="dl">"</span><span class="p">,</span>
@@ -66,7 +66,7 @@
     <span class="p">}</span>
 <span class="p">};</span></code></pre></figure>
 
-<p>The</p>
+<p>The <code class="language-plaintext highlighter-rouge">SenstaionGenerator</code></p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">hdModel</span><span class="p">.</span><span class="nx">addSensationGenerator</span><span class="p">(</span>
     <span class="dl">'</span><span class="s1">social_proximity_set</span><span class="dl">'</span><span class="p">,</span> <span class="p">[</span><span class="dl">'</span><span class="s1">proxemic_devices</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">facebook_friends</span><span class="dl">'</span><span class="p">],</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span>

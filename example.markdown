@@ -17,7 +17,7 @@ The figure below presents the outcome of this example build with the Human Data 
 
 <h1>How can such proactive suggestions be build with Human Data Model?</h1>
 
-First, the users must have SeedFiles on their Human Data Model instances. Below is Bob's SeedFile containing his identifiers on HDM, his phone's (companion device) identifier, his Facebook identifier, and his other personal device identifiers. The SeedFile can either be copy-pasted on the instance or be automatically fetched from HDM Hub.
+First, the users must have `SeedFiles` on their Human Data Model instances. Below is Bob's `SeedFile` containing his identifiers on HDM, his phone's (companion device) identifier, his Facebook identifier, and his other personal device identifiers. The `SeedFile` can either be copy-pasted on the instance or be automatically fetched from HDM Hub.
 
 {% highlight js %}
 var bob = {
@@ -33,7 +33,7 @@ var bob = {
 {% endhighlight %}
 
 
-The 
+The `SenstaionGenerator`
 
 {% highlight js %}
 hdModel.addSensationGenerator(
