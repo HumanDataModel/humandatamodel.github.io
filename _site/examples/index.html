@@ -53,7 +53,7 @@
 
 <h1>How can such proactive suggestions be build with Human Data Model?</h1>
 
-<p>First, the users’ must have SeedFiles on their Human Data Model instances. Below is Bob’s SeedFile that contains his identifiers on HDM, his phones (companion device) identifier, his Facebook identifier, as well as his other personal device identifiers. The SeedFile can either be copy-pasted on the instance, or it can be automatically fetched from HDM Hub.</p>
+<p>First, the users must have SeedFiles on their Human Data Model instances. Below is Bob’s SeedFile containing his identifiers on HDM, his phone’s (companion device) identifier, his Facebook identifier, and his other personal device identifiers. The SeedFile can either be copy-pasted on the instance or be automatically fetched from HDM Hub.</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">bob</span> <span class="o">=</span> <span class="p">{</span>
     <span class="na">username</span><span class="p">:</span> <span class="dl">"</span><span class="s2">bob</span><span class="dl">"</span><span class="p">,</span>
@@ -65,6 +65,8 @@
         <span class="dl">"</span><span class="s2">8B034F7B-FA9B-540F-ACF3-88C0CA70C84F</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">bob@ibeacon</span><span class="dl">"</span>
     <span class="p">}</span>
 <span class="p">};</span></code></pre></figure>
+
+<p>The</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">hdModel</span><span class="p">.</span><span class="nx">addSensationGenerator</span><span class="p">(</span>
     <span class="dl">'</span><span class="s1">social_proximity_set</span><span class="dl">'</span><span class="p">,</span> <span class="p">[</span><span class="dl">'</span><span class="s1">proxemic_devices</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">facebook_friends</span><span class="dl">'</span><span class="p">],</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span>
