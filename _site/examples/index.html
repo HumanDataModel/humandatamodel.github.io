@@ -41,9 +41,19 @@
   </header>
 
   <div class="post-content">
-    <center>
+    <h1>Example scenario</h1>
+
+<p>Imagine the following scenario: Bob is meeting his friends at university, and their phones proactively suggest they jog together since, based on their personal profiles, they are all stressed about their courses. It seems that they have lately been quite inactive in any physical activity.</p>
+
+<p>The figure below presents the outcome of this example build with the Human Data Model. In the figure, the users’ HDM instances run on different devices, collecting and processing data.</p>
+
+<center>
 <img src="/assets/img/running.png" width="100%" />
 </center>
+
+<h1>How can such proactive suggestions be build with Human Data Model?</h1>
+
+<p>First, the users’ must have SeedFiles on their Human Data Model instances. Below is Bob’s SeedFile that contains his identifiers on HDM, his phones (companion device) identifier, his Facebook identifier, as well as his other personal device identifiers. The SeedFile can either be copy-pasted on the instance, or it can be automatically fetched from HDM Hub.</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">bob</span> <span class="o">=</span> <span class="p">{</span>
     <span class="na">username</span><span class="p">:</span> <span class="dl">"</span><span class="s2">bob</span><span class="dl">"</span><span class="p">,</span>
